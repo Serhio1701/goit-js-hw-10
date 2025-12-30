@@ -16,3 +16,215 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+#datetime-picker {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  background: #fff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+#datetime-picker:focus {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+
+#datetime-picker:disabled {
+  background: #fafafa;
+  border: 1px solid #808080;
+  color: #808080;
+}
+
+button[data-start] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background: #6c8cff;
+}
+button[data-start]:disabled {
+  background: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+
+/* ===== Form ===== */
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 408px;
+  margin: 36px 0px;
+}
+
+/* ===== Label ===== */
+.form-label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* ===== Input ===== */
+.form-input {
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.form-input:hover {
+  border-color: #000;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
+/* ===== Fieldset ===== */
+.form-fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 360px;
+  height: 78px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.form-legend {
+  padding-left: 24px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* ===== Radio ===== */
+.radio-frame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
+
+  width: 264px;
+  height: 32px;
+}
+.radio-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+}
+
+/* ===== Button ===== */
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  cursor: pointer;
+  transition: background 250ms ease;
+}
+
+.form-btn:hover {
+  background: #6c8cff;
+}
+
+.form-btn:disabled {
+  background: #cfcfcf;
+  cursor: not-allowed;
+}
