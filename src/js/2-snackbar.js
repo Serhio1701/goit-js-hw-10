@@ -50,8 +50,10 @@ function createPromise(delay, state) {
     setTimeout(() => {
       if (state === "fulfilled") {
         resolve(delay);
-      } else {
+      } else if (state === "rejected") {
         reject(delay);
+      } else {
+        console.error("Invalid state:", state);
       }
     }, delay);
   });
