@@ -12,7 +12,7 @@ form.addEventListener("input",onFormInput)
 
 function onFormInput() {
   const delay = form.elements.delay.value;
-  const state = form.elements.delay.value;
+  const state = form.elements.state.value;
 
   btn.disabled = !delay || !state;
 }
