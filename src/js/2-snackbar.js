@@ -8,7 +8,7 @@ btn.classList.add("form-btn");
 btn.disabled = true;
 
 form.addEventListener("submit", onFormSubmit);
-form.addEventListener("input",onFormInput)
+form.addEventListener("input", onFormInput)
 
 function onFormInput() {
   const delay = form.elements.delay.value;
